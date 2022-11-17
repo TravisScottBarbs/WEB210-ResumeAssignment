@@ -1,0 +1,215 @@
+/* Global styles 
+--------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #DCD7C9;
+    ;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 65px;
+    text-shadow: 2px 2px gray;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+}
+
+.content-wrap {
+    max-width: 950px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Navigation Bar
+--------------------------*/
+#navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1% 0 .5% 0;
+    border: 2px solid black;
+}
+
+#nav, #nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 1;
+}
+
+#nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: block;
+    width: 130px;
+    text-decoration: none;
+}
+
+#nav li {
+    float: left;
+    width: 130px;
+}
+
+#nav li ul {
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    width: 150px;
+    left: -999em;
+    padding: .5%;
+}
+
+#nav li:hover ul {
+    left: auto;
+}
+
+#nav li ul li:hover {
+    background-color: grey;
+}
+
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section {
+    border-bottom: 2px dotted black;
+    padding: 20px 0;
+}
+
+.divider > section:last-of-type {
+    border: none;
+}
+
+
+/* Profile
+--------------------------*/
+header {
+    background: lightgrey;
+    color: black;
+}
+
+/* Projects
+--------------------------*/
+.projects {
+    background: rgb(185, 184, 184);
+}
+
+.projects a {
+    color: #9c6cc3;
+}
+
+.projects .btn {
+    color: white;
+    background: rgb(49, 49, 49);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background: rgba(191, 157, 55, 0.8);
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Work Experience 
+--------------------------*/
+.work-experience {
+    background: lightgray;
+}
+
+/* Education 
+--------------------------*/
+.education {
+    background: #bebdb7;
+    background-image: url(../images/isaac-benhesed-onLbXleIkds-unsplash.jpg);
+    background-size: cover;
+    background-position: center right;
+    padding-bottom: 50px;
+}
+
+.education p {
+    width: 55%;
+}
+
+/* Contact info
+--------------------------*/
+footer {
+    background: black;
+    color: #DCD7C9;
+}
+
+/* Responsive styles
+--------------------------*/
+@media screen and (min-width: 700px) {
+    .project-item img {
+        margin-right: 20px;
+        float: left;
+    }
+    .work-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+    header, footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    h1 {
+        font-size: 50px;
+    }
+}
